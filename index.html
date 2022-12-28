@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="seleccionar-mascota">
+        <h1 class="title">pokemon</h1>
+        <h2 class="subtitulo">Elige tu pokemon:</h2>
+
+        <div id="contenedorTarjetas" class="tarjetas">
+
+        </div>        
+
+        <button id="boton-mascota">Seleccionar</button>
+
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulo">Explora el mapa con tu Pokemon</h2>
+        <canvas id="mapa"></canvas>
+        <button onmouseup ="detenerMovimiento()"onmousedown="moverArriba()">arriba</button>
+        <div>
+            <button onmouseup ="detenerMovimiento()"onmousedown="moverIzquierda()">izquierda</button>
+            <button onmouseup ="detenerMovimiento()"onmousedown="moverAbajo()">abajo</button>
+            <button onmouseup ="detenerMovimiento()"onmousedown="moverDerecha()">derecha</button>
+        </div>
+        
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="title">POKEMON</h1>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div id="contenedorAtaques" class="botones">
+
+        </div>
+        <div id="mensaje">
+            <p id="resultado">Suerte🍀</p>
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>
+        <div class="ataques">
+            <div class="jugador">
+                <p id="vidas-jugador">0</p>
+                <p id="mascota-jugador"></p> 
+                <div id="ataques-jugador"></div>
+            </div>
+            <div class="enemigo">
+                <p id="vidas-enemigo">0</p> 
+                <p id="mascota-enemigo"></p> 
+                <div id="ataques-enemigo"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/code.js"></script>
+</body>
+</html>
+

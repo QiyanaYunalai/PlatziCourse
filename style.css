@@ -1,0 +1,172 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Noto+Sans+TC:wght@700&family=Poppins:wght@100;300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nabla', cursive;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: darkblue;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 5em;
+    color: white;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.tarjetas, .botones {
+    margin: 30px;
+    border-radius: 40px;
+    display: flex;    
+    gap: 10px;
+}
+
+.tarjeta-pokemon {
+    width: 350px;
+    height: 440px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(82, 71, 233);
+
+}
+.tarjeta-pokemon .vamos {
+    font-size: 16px;
+}
+
+.tarjeta-pokemon img {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    margin-left: 0px;
+}
+
+#boton-mascota{
+    width: 300px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+#boton-mascota:hover{
+    background-color: rgb(20, 173, 220);
+}
+
+input {
+    display: none;
+}
+
+input:hover + label{
+    background-color: rgb(20, 173, 220);
+}
+
+input:checked + label{
+    background-color: rgb(220, 20, 153);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-ataques {
+    width: 80px;
+    background-color: rgb(82, 71, 233);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensaje {
+    width: 280px;
+    background: rgb(82, 71, 233);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: rgb(82, 71, 233);
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 200px 200px;
+    color: white;
+    text-align: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 560px){
+    .tarjetas, .botones  {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 412px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
